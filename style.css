@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Formatowanie zawartości strony */
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Naglowek strony */
+#top {
+  height: 112px;
+  /* background: #34495E; */
+  padding: 0;
+  margin: 0;
+  font-size: 1.3em;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  /* position: top; */
+  top: 0;
+  /* background: url('img/m.jpg'); */
+  /*background-repeat: no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	object-fit: cover; */
+}
+
+.background-on-scroll {
+  /* background-image: url('img/m.jpg'); */
+  /* Другие стили для заднего фона, если необходимо */
+  backdrop-filter: blur(10px); /* Применяем размытие заднего фона */
+  /* Другие стили для заднего фона, если необходимо */
+}
+
+.ferst-color_text {
+  color: #fff;
+  text-decoration: none;
+}
+
+.next-color_text {
+  color: #000000;
+}
+
+#logo {
+  float: left;
+}
+
+.container {
+  max-width: 70%;
+  margin: auto;
+  /* margin: 0 0 0 14vw; */
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* Przyciski */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 16px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button-light {
+  background: #ffffff;
+  color: #000000;
+}
+
+.button-green {
+  background: #a1d76f;
+  color: #ffffff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button-green:hover {
+  background: #7ddf22;
+  color: #ffffff;
+}
+
+/* Baner */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#banner {
+  padding: 200px 0;
+}
+
+#banner h1 {
+  margin-bottom: 30px;
+  font-size: 300%;
+  color: #65668a;
+  text-transform: uppercase;
+}
+
+section {
+  clear: both;
+  padding: 50px 0;
+  overflow: auto;
+}
+
+/* Sekcja offer */
+
+#offer img {
+  margin-bottom: 32px;
+}
+
+#offer h2 {
+  color: #34495e;
+  padding: 40px 0;
+  text-transform: uppercase;
+  font-size: 220%;
+}
+
+#offer h3 {
+  color: #a1d76f;
+  margin-bottom: 10px;
+  font-size: 180%;
+}
+
+.three-columns {
+  width: 33.3333%;
+  float: left;
+}
+
+.two-columns {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+/* Sekcja O nas */
+#aboutus h2 {
+  color: #fff;
+  padding: 40px 0;
+  text-transform: uppercase;
+  font-size: 220%;
+}
+
+#aboutus p {
+  color: #34495e;
+  font-size: 1.5em;
+}
+
+/* Sekcja Kontakt */
+#contact {
+  text-align: left;
+}
+
+#contact input {
+  margin-bottom: 16px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  padding: 8px;
+  width: 80%;
+}
+
+#contact h2 {
+  color: #d15555;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 220%;
+}
+
+#contact label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Stopka */
+footer {
+  background: #34495e;
+  color: #ffffff;
+  padding: 16px 0;
+  text-align: right;
+}
+
+/* --------------------------------------------------- */
+
+.round-image {
+  margin-top: 20px;
+  border-radius: 60%;
+  /* Задает круглую форму с помощью радиуса в 50% */
+  width: 90px;
+}
+#logo img {
+  position: relative;
+}
+
+.round-image_second {
+  margin-top: 60px;
+  border-radius: 60%;
+  /* Задает круглую форму с помощью радиуса в 50% */
+  width: 190px;
+}
+
+.background {
+  background: url("img/m.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.blur {
+  position: relative;
+  bottom: 1655px;
+  width: 100%;
+  height: 100px;
+  /* background-color: #b3ff007e; */
+  backdrop-filter: blur(10px);
+}
+
+.blur_2 {
+  position: relative;
+  bottom: 998px;
+  width: 100%;
+  height: 100px;
+  /* background-color: #b3ff007e; */
+  backdrop-filter: blur(10px);
+}
+
+.koniec {
+  margin-top: 100px;
+}
+
+.background_second {
+  /* background: url("img/main/second.jpg"); */
+  background-color: rgba(233, 233, 233);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.services-img {
+  width: 119.672px;
+  height: 105px;
+  margin-left: 40px;
+  margin-right: 50px;
+}
+
+.services-text {
+  width: 243.75px;
+  height: 308.379px;
+  margin-top: 15;
+  margin-left: 19.1;
+  margin-right: 19.1;
+}
+
+.services_p {
+  color: #615f5f;
+}
+
+.center-text_second {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 столбца */
+  grid-template-rows: repeat(1, 410px);
+  /* 2 строки */
+  column-gap: 70px;
+  /* Промежуток между элементами */
+  grid-template-columns: 230px 230px 230px 230px;
+  /* Отступ от верха*/
+  margin-top: 60px;
+
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.grid-item {
+  width: 220.938px;
+  height: 360.938px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 32.8125px;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+	box-shadow: #000000;
+	box-shadow: 0 6px 20px 0;
+
+}
+
+.grid-item-services_4 {
+  padding-top: 0px;
+}
+.services_4-headtext {
+  padding-top: 10px;
+}
+
+/* .services-inner {
+  width: 1160px;
+	height: 658.500px;
+	margin-left: 90px;
+	font-size: 15px;
+	line-height: 22.5px;
+} */
+
+.sr-img {
+  position: relative;
+  bottom: 15px;
+}
+
+.sr-img2 {
+  position: relative;
+  right: 10px;
+}

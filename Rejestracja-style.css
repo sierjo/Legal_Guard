@@ -1,0 +1,81 @@
+.form {
+    padding-bottom: 10px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+
+.Opis {
+    margin: auto;
+    text-align: center;
+    padding-top: 27.5px;
+    padding-bottom: 10px;
+}
+
+.Opis_date {
+    text-align: center;
+    margin: auto;
+}
+
+.p {
+    margin: auto;
+    text-align: center;
+}
+
+.inp > input {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-left: 10px;
+    margin: auto;
+    border-radius: 7px;
+}
+
+/* Кнопка */
+
+.button_push {
+    padding: 1.3vw;
+    border-radius: 2vw;
+}
+
+.telefon_error {
+    display: inline-block;
+}
+
+.check_boks_class {
+    display: inline-block;
+}
+
+.the_mistakes {
+    padding-left: 5px;
+    color:red;
+    /* font-size: xx-large; */
+}
+
+.error_string{
+    color:red;
+}
+
+.buttons button{
+    cursor: pointer;
+}
+
+.buttons{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 1.6vw;
+}
+.buttons a{
+    /* padding: 0 1vw 0 0; */
+    padding: 1.5vw;
+    border-radius: 2vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: rgb(83, 79, 79);
+}
+.aContainer{
+    padding: 1vw 0 2vw 0;
+}

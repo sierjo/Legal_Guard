@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Rejestracja-style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="conteiner">
+        <form action='' class="form" id="valid">
+            <div class="Opis">
+                <div class="inp">
+                    imie
+                    <input name="Imie" type="text" placeholder="Imie" class="pusto_polie">
+                    <!-- <p id="pusto_polie"></p> -->
+                </div>
+            </div>
+            <div class="Opis">
+                <div class="inp">
+                    Nazwisko
+                    <input name="Nazwisko" type="text" placeholder="Nazwisko" class="pusto_polie">
+                    <p id="pusto_polie"></p>
+                </div>
+            </div>
+            <div class="Opis">
+                <div class="inp">
+                    Email
+                    <input name="Email" type="text" placeholder="Email" id="email"> 
+                    <p id="pusto_polie"></p>
+                </div>
+            </div>
+            <div class="Opis">
+                <div class="inp">
+                    Haslo
+                    <input name="Haslo" type="password" id="haslo_first" placeholder="Haslo">
+                </div>
+                <div class="inp">
+                    Powtur haslo
+                    <input type="password" id="haslo_second" placeholder="Replace haslo">
+                </div>
+            </div>
+            <div class="Opis">
+                <div class="person">
+                    <p>Pieć</p>
+                </div>
+                <div class="inp">
+                    <label for="toggle">M</label>
+                    <input name="boxM" type="checkbox" id="toggle1" checked>
+
+                    <label for="toggle">W</label>
+                    <input name="boxW" type="checkbox" id="toggle2" checked>
+                </div>
+            </div>
+            <div class="Opis">
+                <div class="inp" id="tlef">
+                    <input type="text" placeholder="Telefon" id="komurka">
+                    <div class="box_errors">                        
+                        <p id="error_text" class="telefon_error"></p>
+                        <h3 id="the_mistakes" class="telefon_error  the_mistakes"></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="Opis_date">
+                <div class="inp">
+                    <p class="p">Data urodzenia</p>
+                    <input name="Wiek" id="date" type="date" value="1990-06-01">
+                </div>
+            </div>
+            <div class="Opis">
+                <div class="inp">
+                    <!-- <p class="kraj">Kraj</p> -->
+                    Kraj
+                    <select  name = "Kraj" value = "default" id="country" onchange="wybor_kraju()" >
+                        <option value="default">Wybierz kraj pochodzenia </option>
+                        <option>Polska</option>
+                    </select>
+                </div>
+
+                <div style="display: none;" id="województwo_p" >
+                    <div class="województwo">
+                        <select id="regionPoland" name="Województwo" onchange="adres_zamieszkania()">
+                            <option value="default">Wybierz województwo</option>
+                            <option>Dolnośląskie</option>
+                            <option>Kujawsko-pomorskie</option>
+                            <option>Lubelskie</option>
+                            <option>Lubuskie</option>
+                            <option>Łódzkie</option>
+                            <option>Małopolskie</option>
+                            <option>Mazowieckie</option>
+                            <option>Opolskie</option>
+                            <option>Podkarpackie</option>
+                            <option>Podlaskie</option>
+                            <option>Pomorskie</option>
+                            <option>Śląskie</option>
+                            <option>Świętokrzyskie</option>
+                            <option>Warmińsko-mazurskie</option>
+                            <option>Wielkopolskie</option>
+                            <option>Zachodniopomorskie</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="display: none;" id="województwo_n">
+                    <input id="vvod_województwo" type="text" placeholder="Dodaj województwo" oninput="adres_zamieszkania()">
+                </div>
+
+                <div style="display: none;" id="adres_zamieszkania">
+                    Adres Zamieszkania
+                    <input name="Adres_Zamieszkania" type="text" id="input_zamieszkania" oninput="adres_korespondencii()">
+                </div>
+                <div class="inp check_box" id="check_box" style="display: none;" oninput='adres_zamieszkania_replace()'>
+                    <label for="toggle">Adres korespondencii jest taki</label>
+                    <input type="checkbox" id="check_korespondencii">
+                </div>
+                <div style="display: none;" id="adres_zamieszkania_replace">
+                    Adres korespondencii
+                    <input name="Adres_korespondencii" type="text" id="input_zamieszkania_replace" readOnly="true">
+                </div>
+            </div>
+            <div class="buttons">
+                <div><button type="submit" class="button_push">Przycisk zapisz</button></div>
+                <div class="aContainer">
+                    <a href="index.html">WRUCZ</a>
+                    <!-- <p href="index.html.lnk">Wrucz</p> -->
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="Rejestracja-script.js"></script>
+
+</body>
+
+</html>
