@@ -14,16 +14,12 @@
     <div class="background">
         <header id="top">
             <div class="container">
-                <div id="logo">
-                    <a href="index.html"><img src="img/vista-de-pecas-de-xadrez-dramaticas-com-ambiente-mi.avif"
-                            alt="Prawa i Ochrona" class="round-image"></a>
-                </div>
-                <div>
+                <div class="topMenu">
                     <input id="menu__toggle" type="checkbox">
                     <label class="menu__btn" for="menu__toggle">
                         <span></span>
                       </label>
-                        <ul id="main-menu" class="menu__box container_menu add_menu_style">
+                        <ul id="main-menu" class="menu__box container_menu">
                             <li><a href="#offer" class="ferst-color_text menu__item">Oferta</a></li>
                             <li><a href="#aboutus" class="ferst-color_text menu__item">O nas</a></li>
                             <li><a href="#contact" class="ferst-color_text menu__item">Kontakt</a></li>
@@ -49,7 +45,7 @@
                 <h2 class="center-text center-text-ferst">Obrona interesów przed sądem w sprawach cywilnych i administracyjnych</h2>
                 <h3 class="center-text center-text_second">4 kluczowe usługi firmy</h3>
                 <div class="grid-container">
-                    <div class="three-columns center-text grid-item" onclick="window.location.href='Rejestracja.html'">
+                    <div class="three-columns center-text grid-item">
                         <div class="services-img sr-img" id="services-img_1">
                             <img src="img/services-img.webp" alt="services_1">
                         </div>
@@ -95,7 +91,8 @@
     <section id="aboutus">
         <div class="container">
             <div class="two-columns center-text">
-                <img src="img/vista-de-pecas-de-xadrez-dramaticas-com-ambiente-mi.avif" class="round-image_second">
+                <img src="img/vista-de-pecas-de-xadrez-dramaticas-com-ambiente-mi.avif"
+                    alt="Najlepsi cukiernicy w mieście!" class="round-image_second">
             </div>
             <div class="two-columns">
                 <p class="koniec">Sukces w najbardziej zagmatwanych sprawach i sporach</p>
@@ -111,11 +108,11 @@
         <div class="container">
             <h2 class="center-text">Skontaktuj się z nami</h2>
             <div class="two-columns">
-                <form action="#" method="post" id="valid">
+                <form action="#" method="post">
                     <label for="name">Imię i nazwisko:</label><br>
-                    <input type="text" id="name" name="Imie"><br>
+                    <input type="text" id="name" name="name"><br>
                     <label for="email"><strong>Adres e-mail:</strong></label><br>
-                    <input type="email" id="email" name="Email"><br>
+                    <input type="email" id="email" name="email"><br>
                     <button type="submit" class="button button-green">Wyślij dane</button>
                 </form>
             </div>
@@ -134,9 +131,6 @@
                 kontakt@sd.pl, Ushkevich Siarhei</p>
         </div>
     </footer>
-    <div class="blur"></div>
-    <div class="blur_2"></div>
-    <div class="blur_3"></div>
     <script src="script.js"></script>
 </body>
 
