@@ -172,8 +172,6 @@ function validation(userAge) {
   //Все поля заполнены
   function pusto_pole() {
     let result = true;
-    // let pusto_polie = document.getElementById('pusto_polie');
-    //ролучаем все инпут с классом pusto_polie
     let inputs = document.querySelectorAll(".pusto_polie");
     inputs.forEach((input) => {
       remuve_error(input);
@@ -307,7 +305,6 @@ document.getElementById("valid").addEventListener("submit", function (event) {
   event.preventDefault();
 
   let valid = validation();
-
   if (valid.bull == true) {
     alert("Forma prawdżiva");
     const form = event.target;
@@ -329,29 +326,3 @@ document.getElementById("valid").addEventListener("submit", function (event) {
     alert("Forma nie jest prawdżiva");
   }
 });
-
-// //Все поля заполнены
-// function pusto_pole() {
-//   let result = true,
-//     pusto_polie = document.getElementById('pusto_polie');
-//   input = document.querySelectorAll('input').forEach(elem => {
-//     if (elem.value !== '') {
-//       result = true;
-//       elem.style.borderColor = "black";
-//       console.log('good');
-//       pusto_polie.textContent = '';
-//     } else {
-//       // alert('Поле не заполнено')
-//       result = false;
-//       elem.setAttribute("placeholder", 'DODAJ');
-//       elem.style.borderColor = "red";
-//       pusto_polie.textContent = 'Polie Jest pusto';
-//     };
-//   });
-//   if (toggle_first.checked != true && toggle_second.checked != true) {
-//     result = false;
-//     alert('Not  GENDER');
-//   };
-
-//   console.log(result);
-// };
