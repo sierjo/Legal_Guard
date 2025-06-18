@@ -14,33 +14,27 @@
         <form action='' class="form" id="valid">
             <div class="Opis">
                 <div class="inp">
-                    imie
                     <input name="Imie" type="text" placeholder="Imie" class="pusto_polie">
-                    <!-- <p id="pusto_polie"></p> -->
                 </div>
             </div>
             <div class="Opis">
                 <div class="inp">
-                    Nazwisko
                     <input name="Nazwisko" type="text" placeholder="Nazwisko" class="pusto_polie">
                     <p id="pusto_polie"></p>
                 </div>
             </div>
             <div class="Opis">
                 <div class="inp">
-                    Email
                     <input name="Email" type="text" placeholder="Email" id="email"> 
                     <p id="pusto_polie"></p>
                 </div>
             </div>
             <div class="Opis">
                 <div class="inp">
-                    Haslo
                     <input name="Haslo" type="password" id="haslo_first" placeholder="Haslo">
                 </div>
                 <div class="inp">
-                    Powtur haslo
-                    <input type="password" id="haslo_second" placeholder="Replace haslo">
+                    <input type="password" id="haslo_second" placeholder="Powtur haslo">
                 </div>
             </div>
             <div class="Opis">
@@ -72,7 +66,6 @@
             </div>
             <div class="Opis">
                 <div class="inp">
-                    <!-- <p class="kraj">Kraj</p> -->
                     Kraj
                     <select  name = "Kraj" value = "default" id="country" onchange="wybor_kraju()" >
                         <option value="default">Wybierz kraj pochodzenia </option>
@@ -80,7 +73,7 @@
                     </select>
                 </div>
 
-                <div style="display: none;" id="województwo_p" >
+                <div style="display: none;" id="województwo_p" class="DopOpis" >
                     <div class="województwo">
                         <select id="regionPoland" name="Województwo" onchange="adres_zamieszkania()">
                             <option value="default">Wybierz województwo</option>
@@ -108,7 +101,7 @@
                     <input id="vvod_województwo" type="text" placeholder="Dodaj województwo" oninput="adres_zamieszkania()">
                 </div>
 
-                <div style="display: none;" id="adres_zamieszkania">
+                <div style="display: none;" id="adres_zamieszkania" class="DopOpis">
                     Adres Zamieszkania
                     <input name="Adres_Zamieszkania" type="text" id="input_zamieszkania" oninput="adres_korespondencii()">
                 </div>
@@ -116,21 +109,20 @@
                     <label for="toggle">Adres korespondencii jest taki</label>
                     <input type="checkbox" id="check_korespondencii">
                 </div>
-                <div style="display: none;" id="adres_zamieszkania_replace">
+                <div style="display: none" id="adres_zamieszkania_replace" class="reper">
                     Adres korespondencii
                     <input name="Adres_korespondencii" type="text" id="input_zamieszkania_replace" readOnly="true">
                 </div>
             </div>
             <div class="buttons">
                 <div><button type="submit" class="button_push">Przycisk zapisz</button></div>
-                <div class="aContainer">
+                <div>
                     <a href="index.html">WRUCZ</a>
-                    <!-- <p href="index.html.lnk">Wrucz</p> -->
                 </div>
             </div>
         </form>
     </div>
-    <script src="Rejestracja-script.js"></script>
+    <script src="Rejestracja.js"></script>
 
 </body>
 
